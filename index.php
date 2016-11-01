@@ -16,7 +16,7 @@
 
 <body>
   <div class="container">
-  <h1 align=center style="color:white">NYCA TIME</h1>
+  <h1 align="center" style="color:white">NYCA TIME</h1>
   <div class="form-container">
     <form class="signup-form" action="submit.php" method="post">
       <h3 class="title">Create Profile</h3>
