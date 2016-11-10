@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+ <meta charset="UTF-8">
+  <title>Nyca Time</title>
+  
+  <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Nunito:400,300,700'>
+
+      <link rel="stylesheet" href="style.css">
+  
+  <script>
+  $(document).ready(function() {
+    $("#startDatePicker").datepicker();
+    $("#endDatePicker").datepicker();
+    $("button").click(function(){
+        $("form").submit();
+    });
+    
+
+  });
+  </script>
+</head>
+<body>
+
+
+
+<body>
+  <div class="container">
+  <h1 align="center" style="color:white">Instructor View page</h1>
+  <div class="time-form-container">
+ <form class="instructorViewScreen-form" action="timeFormView.html" method="post">
+
+
+<div class="form-group" id="students">
+  <p>Select Name Of Student
+      <select name="students"  class="form-studentselect" id = "students">
+                             <option value="selectstudent">Select Student</option>
+ /*Dynamic Student Fetch*/
+
+
+
+
+/*Dynam ic Student Fetch*/
+                              <option value="all">all</option>
+                              </select>
+                              </p> 
+ </div>
+<div class="form-group" id="Dates">
+ <p>Select Time Period  
+
+
+        <p1 style="color:red" class="form-startenddate">Start Date <input type="text" id="startDatePicker">
+        End Date <input type="text" id="endDatePicker"></p1></legend>
+   </div>
+  
+    <div class="form-button">
+        <button class="login-button" name="submit">View</button>
+       </p>
+      </div>
+ 
+
+    </form>
+  </div>
+</div>
+
+</body>
+</html>
