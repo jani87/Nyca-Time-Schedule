@@ -11,8 +11,15 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = "INSERT INTO Persons (firstName, lastName, email, phone, username, passwd)
-VALUES ("'.$_POST[firstName]'","'.$_POST[LastName]'","'.$_POST[email]'","'.$_POST[phone]'","'.$_POST[username]'","'.$_POST[password]'")";
+$firstname = $_POST['firstName'];
+$lastname = $_POST['lastName'];
+$email = $_POST['email'];
+$phone = $_POST['phone'];
+$username = $_POST['username'];
+$password = $_POST['passwd'];
+
+$sql = "INSERT INTO `Persons` (`firstName`, `lastName`, `email`, `phone`, `username`, `passwd`)
+VALUES ('$firstname','$lastname','$email','$phone','$username','$password');";
 
 if (mysqli_query($conn, $sql)) {
     echo "New record created successfully";
