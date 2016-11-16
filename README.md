@@ -9,7 +9,7 @@ https://confluence.nycasoft.net/display/SETUP/Project_guidelines
     ```
     git clone git@github.com:jani87/Nyca-Time-Schedule.git
     ```
+Get the LAMP setup environment in centos..
 
-1. Install XAMPP on your machine. https://www.apachefriends.org/download.html
-
-1. Verify that XAMPP is installed. 
+This is source link for setup process: 
+https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack
