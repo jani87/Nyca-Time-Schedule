@@ -1,7 +1,9 @@
 Nyca time scheduler 
 
 For detailed setup instructions, visit:
+```
 https://app.nuclino.com/teams/13:17809
+```
 
 **Quick Setup Guide**
 
