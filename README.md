@@ -12,4 +12,6 @@ https://app.nuclino.com/teams/13:17809
 Get the LAMP setup environment in centos..
 
 This is source link for setup process: 
-https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack
+```
+https://app.nuclino.com/teams/13:17809/documents/HOW-TO-SETUP-THE-ENVIRONMENT--LOCAL-SERVER-af49a82c-2380-457e-9abc-75e96a44ffcf
+```
