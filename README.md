@@ -11,9 +11,7 @@ https://app.nuclino.com/teams/13:17809
     ```
     git clone git@github.com:jani87/Nyca-Time-Schedule.git
     ```
-Get the LAMP setup environment in centos..
-
-This is source link for setup process: 
+2. Get the LAMP setup environment in centos.. 
 ```
 https://app.nuclino.com/teams/13:17809/documents/HOW-TO-SETUP-THE-ENVIRONMENT--LOCAL-SERVER-af49a82c-2380-457e-9abc-75e96a44ffcf
 ```
