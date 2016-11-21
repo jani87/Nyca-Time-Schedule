@@ -1,0 +1,96 @@
+ <!DOCTYPE html>
+    <html>
+
+     <head>
+        
+        <meta charset="UTF-8">
+         <title>EnterTime Form</title>
+              <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
+              <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+              <link rel="stylesheet" href="style.css">       
+    
+      <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+      <script src="script.js"></script>        
+            
+    </head>
+
+    <body>
+     <!-- container class-->
+     <div class="container">
+     <h1 align=center style="color:white" class="heading">NYCA TIME</h1>
+        
+
+     <div>
+        <!-- back button-->
+        <button class="back-button" name="back">Back</button>
+     </div>
+     
+      <!-- entertimeform container class-->
+     <div class="entertimeform-container">
+        <!-- Enter time form-->
+        <form id="enterTime" class="signup-form" action="" method="post">
+          <h1 class="title">Enter Time Form</h1>
+           <div class="form-group">
+           <!--all the required feilds are kept in table rows and coloumns without border -->
+           <table cellpadding="20%">
+           <tr>
+           <!-- student field-->
+           <td>Please select the student</td>
+                                    <td> <select id="selectStudent" >
+                                            <option></option>
+                                             <option value="student1">student Name1</option>
+                                             <option value="student2">student Name2</option>
+                                             <option value="student3">student Name3</option>
+                                             <option value="student4">student Name4</option>
+                                     </select> </td>
+            
+           </tr>
+            <!-- Date field-->
+           <tr><td>Please select the Date</td>
+          <td> <input type="text" id="selectDate"></td>
+           </tr>
+           <!-- Total Time field-->
+           <tr><td>Please select the Total Time</td> <td><p1  style="color:yellow;">hh:
+                                     <select  id="selectHrs" >
+                                             <option ></option>
+                                             <option value="1">01</option>
+                                             <option value="2">02</option>
+                                             <option value="3">03</option>
+                                             <option value="4">04</option>
+                                             <option value="5">05</option>
+                                             <option value="6">06</option>
+                                             <option value="7">07</option>
+                                             <option value="8">08</option>
+                                             <option value="9">09</option>
+                                             <option value="10">10</option>
+                                             <option value="11">11</option>
+                                             <option value="12">12</option>
+                                     </select>
+                                     <p1 style="color:yellow;">mm:</p1>
+                                     <select id="selectMins">
+                                             <option></option>
+                                             <option value="15">15</option>
+                                             <option value="30">30</option>
+                                             <option value="45">45</option>
+                                     </select></td>
+           </tr>
+          </table>
+           
+           <div>
+           <tab>
+    	    <!-- Reset and Submit Button fields-->
+             <input type="reset" value="Reset" class="reset-button" onclick="this.form.reset();">
+    	      <button class="login-button" name="submit">Submit</button> 
+           
+           </tab>
+           </div>
+           
+           </div>
+        </form>
+     </div>
+     </div>
+
+    </body>
+    </html>
