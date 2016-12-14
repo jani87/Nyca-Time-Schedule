@@ -1,0 +1,137 @@
+<?php
+include 'EditViewUser1.php';
+include 'EditViewUser2.php'
+?>
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>nyca time</title>
+
+    <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Nunito:400,300,700'>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <Script>
+
+        function username() {
+            $('#status').empty();
+            $('#status').append("<option>Loading .....</option>");
+            $.ajax({
+                type:"GET",
+                url:"EditViewUser1.php",
+                contentType:"application/json; charset-utf-8",
+                dataType:"json",
+                success:function(data){
+                    $('#status').empty();
+                   $('#status').append("<option value='empty' >--Select option--</option>")
+                    $('#status').append("<option> All</option>")
+                    $.each(data,function (i,iteam) {
+                    $('#status').append($('<option>',{value:iteam['personId'], text:iteam['firstName']+' '+iteam['lastName']},'</option>'))});
+                },
+                complete: function () {
+
+                }
+            });
+        }
+        function changeStatus() {
+            if ($('#status').val() == 'empty')
+            {
+                alert("Select a valid option");
+            }
+            else {
+
+                $.ajax({
+                    type: 'POST',
+                    url: 'EditViewUser2.php',
+                    data: {changeStatus: $('#status').val()},
+                    dataType: 'html',
+                    success:function () {
+                        alert("sucess");
+                    }
+                });
+                //console.log($('#status').val());
+            }
+        }
+
+       function viewData() {
+            $.ajax({
+                type:"GET",
+                url:"EditViewUser2.php",
+                contentType:"application/json; charset-utf-8",
+                dataType:"json",
+                success:function(data){
+                    $.each(data,function (i,iteam) {
+                        $('#content').append($('<td>',{}))
+                    });
+
+                }
+            });
+        }
+
+
+        $(document).ready(function () {
+           username();
+        });
+
+
+    </Script>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+<div class="container">
+    <div>
+        <form action="login.php">
+            <input type="submit" value="Logout" class="logout">
+        </form>
+    </div>
+    <h1 class="heading">NYCA TIME</h1>
+    <div class="form-container">
+        <form class="signup-form" action="EditViewUser2.php" method="POST">
+            <h3 class="title">Edit/View User</h3>
+
+            <div class="form-group" id="username">
+
+                <label><b>Person Name</b></label>
+                <Select id="status" name="name" onchange="changeStatus()" required>
+                </Select>
+
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="view" class="login-button" onclick="viewData()">View</button>
+            </div>
+        </form>
+        <br>
+        <br>
+        <div>
+            <table>
+                <tr>
+                    <th>PersonName</th>
+                    <th>UserName</th>
+                    <th>Password</th>
+                    <th>role</th>
+                    <th>Phone</th>
+                    <th>email</th>
+                    <th>Edit</th>
+                </tr>
+                <tr id="content">
+                    <td>hi</td>
+                    <td>hello</td>
+                    <td>how</td>
+                    <td>do</td>
+                    <td>u</td>
+                    <td>do</td>
+                    <td><button class="Edit-button" type="submit">Edit</button></td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+</div>
+
+<script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
+
+</body>
+</html>
