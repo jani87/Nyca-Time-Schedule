@@ -6,8 +6,6 @@ insert into AclRoles(roleName) values('Super Admin');
 insert into AclRoles(roleName) values('manager');
 insert into AclRoles(roleName) values('Instructor');
 insert into AclRoles(roleName) values('Student');
-
-
 insert into Persons(firstName,lastName,email,userName,passwd) values ('Surya','Telabrolu','dummy@gmail.com','Surya','Surya');
 insert into Persons(firstName, lastName,email,userName,passwd) values ('SaiAjay','Doddapaneni','dummy@gmail.com','SaiAjay','SaiAjay');
 insert into Persons(firstName, lastName,email,userName,passwd) values ('Sudheer','Kunamneni','dummy@gmail.com','Sudheer','Sudheer');
@@ -76,22 +74,22 @@ insert into Times(enrollmentId,sessionDate,hours,statusId) values (4,'2016-05-03
 insert into Times(enrollmentId,sessionDate,hours,statusId) values (3,'2016-12-11','02:15:11',3);
 
 
-insert into discussions(instructorEnrollmentTimeId,discussion) values (1,'dummydummydummydummy');
-insert into discussions(instructorEnrollmentTimeId,discussion) values (2,'dummydummydummydummy');
-insert into discussions(instructorEnrollmentTimeId,discussion) values (3,'dummydummydummydummy');
-insert into discussions(instructorEnrollmentTimeId,discussion) values (2,'dummydummydummydummy');
-insert into discussions(instructorEnrollmentTimeId,discussion) values (3,'dummydummydummydummy');
-insert into discussions(instructorEnrollmentTimeId,discussion) values (4,'dummydummydummydummy');
-insert into discussions(instructorEnrollmentTimeId,discussion) values (1,'dummydummydummydummy');
-insert into discussions(instructorEnrollmentTimeId,discussion) values (6,'dummydummydummydummy');
-insert into discussions(instructorEnrollmentTimeId,discussion) values (7,'dummydummydummydummy');
-insert into discussions(instructorEnrollmentTimeId,discussion) values (9,'dummydummydummydummy');
-insert into discussions(instructorEnrollmentTimeId,discussion) values (7,'dummydummydummydummy');
-insert into discussions(instructorEnrollmentTimeId,discussion) values (8,'dummydummydummydummy');
-insert into discussions(instructorEnrollmentTimeId,discussion) values (1,'dummydummydummydummy');
-insert into discussions(instructorEnrollmentTimeId,discussion) values (3,'dummydummydummydummy');
-insert into discussions(instructorEnrollmentTimeId,discussion) values (6,'dummydummydummydummy');
-insert into discussions(instructorEnrollmentTimeId,discussion) values (6,'dummydummydummydummy');
+insert into Discussions(instructorEnrollmentTimeId,discussion) values (1,'dummydummydummydummy');
+insert into Discussions(instructorEnrollmentTimeId,discussion) values (2,'dummydummydummydummy');
+insert into Discussions(instructorEnrollmentTimeId,discussion) values (3,'dummydummydummydummy');
+insert into Discussions(instructorEnrollmentTimeId,discussion) values (2,'dummydummydummydummy');
+insert into Discussions(instructorEnrollmentTimeId,discussion) values (3,'dummydummydummydummy');
+insert into Discussions(instructorEnrollmentTimeId,discussion) values (4,'dummydummydummydummy');
+insert into Discussions(instructorEnrollmentTimeId,discussion) values (1,'dummydummydummydummy');
+insert into Discussions(instructorEnrollmentTimeId,discussion) values (6,'dummydummydummydummy');
+insert into Discussions(instructorEnrollmentTimeId,discussion) values (7,'dummydummydummydummy');
+insert into Discussions(instructorEnrollmentTimeId,discussion) values (9,'dummydummydummydummy');
+insert into Discussions(instructorEnrollmentTimeId,discussion) values (7,'dummydummydummydummy');
+insert into Discussions(instructorEnrollmentTimeId,discussion) values (8,'dummydummydummydummy');
+insert into Discussions(instructorEnrollmentTimeId,discussion) values (1,'dummydummydummydummy');
+insert into Discussions(instructorEnrollmentTimeId,discussion) values (3,'dummydummydummydummy');
+insert into Discussions(instructorEnrollmentTimeId,discussion) values (6,'dummydummydummydummy');
+insert into Discussions(instructorEnrollmentTimeId,discussion) values (6,'dummydummydummydummy');
 
 
 
