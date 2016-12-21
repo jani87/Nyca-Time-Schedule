@@ -1,3 +1,25 @@
+<html>
+<head>
+    <title>retrieving students list data</title>
+    <style type="text/css">
+
+        #data {
+            color: yellow;
+        }
+
+        #data thead.tablehead {
+            color: red;
+        }
+
+    </style>
+</head>
+<body style="background-color:rgba(6, 41, 61, 1)">
+
+<!--Back button field-->
+<div>
+    <button class="back-button" name="logout" onclick="document.location.href='';">Logout</button>
+</div>
+
 <?php
 /**
  * Created by JAGA
@@ -28,8 +50,9 @@ INNER JOIN Enrollments AS e ON p.personId = e.studentId
 INNER JOIN Times AS t ON e.enrollmentId = t.enrollmentId
 WHERE instructorId='10' ");
 ?>
-<table border="2" margin:0 auto;" >
-<thead>
+<table border="5" bordercolor="white" align="center" margin:2 auto; id='data'
+" >
+<thead class='tablehead'>
 <tr>
     <th>FirstName</th>
     <th>LastName</th>
@@ -52,5 +75,5 @@ while ($row = mysql_fetch_assoc($result)) {
 </tbody>
 </table>
 <?php mysql_close($connector); ?>
-
-
+</body>
+</html>

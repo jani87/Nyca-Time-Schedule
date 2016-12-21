@@ -7,12 +7,12 @@
     <title>EnterTime Form</title>
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../static/css/style.css">
 
     <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
-    <script src="script.js"></script>
+    <script src="../static/scripts/script.js"></script>
 
 
 </head>
@@ -25,7 +25,9 @@
 
     <!--Back button field-->
     <div>
-        <button class="back-button" name="back" onclick="document.location.href='instructor.html';">Back</button>
+        <button class="back-button" name="back" onclick="document.location.href='../html-templates/instructor.html';">
+            Back
+        </button>
     </div>
     <!-- entertimeform container which includes form of our EntryForm page-->
     <div class="entertimeform-container">
